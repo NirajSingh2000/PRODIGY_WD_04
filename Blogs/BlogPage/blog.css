@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=pexels-pixabay-257360.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-image {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 50px;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.header-image:hover {
+    transform: translateY(-50%) scale(0.8);
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    .header-image {
+        left: 10px;
+        max-width: 40px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    transform: translateY(-50%);
+    margin-left: auto; /* Move social icons to the right */
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+}
+.social-icons a:hover{
+    transform: scale(1.2);
+}
+.social-icons .fa-whatsapp{
+    color: rgb(0, 209, 0);
+}
+.social-icons .fa-linkedin{
+    color: #007bff;
+}
+.social-icons .fa-instagram{
+    color: rgba(253, 54, 18, 0.938);
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.blog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog-meta {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.blog-content {
+    line-height: 1.6;
+    color: #444;
+}
+
+.blog-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.blog-content a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-content a:hover {
+    text-decoration: underline;
+}
+h3, h4{
+    color: #007bff;
+}
+
+.thanku{
+    font-size: 4rem;
+    position: relative;
+    text-align: center;
+}
+.masked-text{
+    background-image: url('https://a-static.besthdwallpaper.com/black-hair-wallpaper-1680x1260-2420_24.jpg');
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 62px;
+    letter-spacing: 12px;
+}
